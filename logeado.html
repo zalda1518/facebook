@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logeado</title>
+
+    <script>
+        window.addEventListener("load", () => {
+            if (localStorage.getItem("iniciado")) {
+                alert("bienvenido de nuevo");
+
+            }
+            else {
+                alert("debes logearte primero");
+                location.href = "loginvista.html";
+
+            }
+
+            const closed = document.getElementById("cerrar");
+            closed.addEventListener("click", () => {
+                cerrando = localStorage.setItem("iniciado", "");
+                alert("cerrando sesion");
+                location.reload();
+            });
+        });
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>ESTAS LOGEADO</h1>
+
+    <button id="cerrar">Cerrar Sesion</button>
+
+
+
+</body>
+
+</html>

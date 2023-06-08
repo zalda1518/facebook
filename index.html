@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <script src="https://kit.fontawesome.com/715b29deb8.js" crossorigin="anonymous"></script>
+    <title>registrarse</title>
+</head>
+
+<body id="body">
+
+    <div class="contenedortotal">
+
+        <div id="divh1">
+            <h2 id="h1">Registrate</h1>
+                <span>Es rapido y facil</span>
+                <span id="cerrar">X</span>
+        </div>
+
+        <form action="/php/registros.php" id="formulario" method="post">
+
+            <div class="input-contenedor">
+
+                <input id="nombre" name="nombre" class="in" type="text" placeholder="nombre completo">
+                <input id="telefono" name="telefono" class="in" type="number" placeholder="telefono">
+                <input id="correo" name="correo" class="in" type="email" placeholder="correo electronico">
+                <input id="clave" name="clave" class="in" type="password" placeholder="clave">
+
+                <div id="divparrafo">
+                    <p class="parrafo">Es posible que usuarios de nuestro servicio
+                        hayan subido tu información de contacto a Facebook. Más información.<br><br>
+                        Al hacer clic en Registrarte, aceptas las Condiciones, la Política de privacidad y la Política
+                        de cookies.
+                        Es posible que te enviemos notificaciones por SMS, que podrás desactivar cuando quieras.
+                    </p>
+                </div>
+
+                <input id="registrar" name="registrar" class="in" type="button" value="Registrate">
+
+            </div> <!--input-contenedor-->
+
+        </form>
+    </div> <!--contenedortotal-->
+
+
+
+
+    <script src="registro.js"></script>
+</body>
+
+
+
+
+</html>
